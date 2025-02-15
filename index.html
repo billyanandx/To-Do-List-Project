@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>My Daily Agenda</h1>
+        <div id="clock"></div>
+
+        <!-- Form untuk menambah task -->
+        <form id="taskForm">
+            <input type="text" id="title" placeholder="Judul Task" required>
+            <textarea id="description" placeholder="Deskripsi Task" required></textarea>
+            <input type="date" id="deadline">
+            <button type="submit">Tambah Task</button>
+        </form>
+
+        <input type="text" id="search" placeholder="Cari task...">
+
+        <!-- List tugas -->
+        <ul id="taskList"></ul>
+    </div>
+</body>
+</html>

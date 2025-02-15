@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #90caf9, #ffcc80);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.5); /* Transparan */
+    backdrop-filter: blur(10px); /* Blur efek */
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+}
+
+#clock {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+input, textarea, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Task item */
+.task-item {
+    background: #fff;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Teks task */
+.task-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 10px; /* Kasih jarak supaya nggak nempel sama tombol */
+}
+
+/* Deadline lebih kecil */
+.task-deadline {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Kotak tombol jadi SEBARIS */
+.task-actions {
+    display: flex;
+    gap: 3px; /* Kasih jarak kecil antar tombol */
+    align-items: center;
+}
+
+/* Ukuran tombol lebih kecil */
+.task-actions button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    padding: 0;
+}
+
+/* Warna tombol */
+.task-actions .done {
+    background: #28a745;
+    color: white;
+}
+
+.task-actions .done:hover {
+    background: #218838;
+}
+
+.task-actions .edit {
+    background: #ffc107;
+    color: white;
+}
+
+.task-actions .edit:hover {
+    background: #e0a800;
+}
+
+.task-actions .delete {
+    background: #dc3545;
+    color: white;
+}
+
+.task-actions .delete:hover {
+    background: #c82333;
+}
+
