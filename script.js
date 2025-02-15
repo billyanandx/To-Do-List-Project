@@ -1,4 +1,17 @@
-document.addEventListener("DOMContentLoaded", loadTasks);
+document.addEventListener("DOMContentLoaded", function () {
+    loadTasks();
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    // Event listener untuk submit form
+    document.getElementById("taskForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Mencegah reload
+        addTask();
+    });
+
+    // Event listener untuk pencarian task
+    document.getElementById("search").addEventListener("input", searchTask);
+});
 
 // Realtime Clock
 function updateClock() {
